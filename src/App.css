@@ -1,0 +1,111 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.app {
+  min-width: 800px;
+  min-height: 800px;
+  background-color: rgb(110, 106, 95);
+  border: 1px solid #c8b4fd;
+  position: relative;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.playground {
+  border: 3px solid #c8b4fd;
+  position: relative;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+.cube {
+  position: absolute;
+  cursor: move;
+  user-select: none;
+}
+
+.cube.selected {
+  box-shadow: 0 0 10px 5px rgba(255, 170, 1, 0.7);
+}
+
+.cube.stuck {
+  box-shadow: 0 0 10px 5px rgba(255, 149, 0, 0.7);
+}
+
+.controls {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.color-picker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.color-option {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+.separate-btn {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.separate-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
